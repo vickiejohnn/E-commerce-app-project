@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./media.css" media="(max-width: 688px)">
+    <link rel="stylesheet" href="./style.css">
+    <title>Figma</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-light p-3 fs-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 h1 fw-bold" href="#">Minimal.</a>
+          <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+            <ul class="navbar-nav text-decoration-none">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="cart.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="./figma/bag.png" alt="" style="width: 20px;"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./figma/carousel-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h1 id="sofa" class="fw-bold">Wood Cloth Sofa</h1>
+              <a href="#" class="fw-bold h5" id="link">See more</a>
+              <!-- <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./figma/carousel-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+                <h1 id="sofa" class="fw-bold">Wood Cloth Sofa</h1>
+                <a href="#" class="fw-bold h5" id="link">See more</a>
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./figma/carousel-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+                <h1 id="sofa" class="fw-bold">Wood Cloth Sofa</h1>
+                <a href="#" class="fw-bold h5" id="link">See more</a>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Social Media -->
+    <div>
+      <ul class="list-unstyled" id="info">
+        <li><a href="https://www.linkedin.com/in/vee-jay">
+          <img src="./figma/linkedin-logo.png" id="linkedin" width="35px" alt="">
+        </a></li>
+        <li><a href="https://twitter.com/Vickiejohnn20">
+          <img src="./figma/twitter.png" id="twitter" width="35px" alt="">
+        </a></li>
+        <li><a href="htpps://wa.me/message/OWHAY6TRQ7H4B1">
+          <img src="./figma/images-removebg-preview.png" id="whatsapp" width="35px" alt="">
+        </a></li>
+        <li><a href="https://web.facebook.com/victorjohn.aderibigbe.7">
+          <img src="./figma/facebook.png" id="facebook" width="35px" alt="">
+        </a></li>
+      </ul>
+    </div>
+    <!-- Media Screen -->
+    <button class="btn d-lg-none fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Menu
+    </button><span><img src="./figma/Menu.png" alt="" class="d-lg-none" style="margin-left: -10px;"></span>
+    
+    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="sidebar">
+              <h2>All Products</h2>
+              <ul>
+                  <li>living</li>
+                  <li>Dining</li>
+                  <li>Furniture</li>
+                  <li>Technics</li>
+                  <li>Accessories</li>
+              </ul>
+              <h4>Filter by</h4>
+              <h5>Price</h5>
+              <input type="range" class="rangee"><br>
+              <input type="button" class="inp" value="20">
+              <input type="button" class="inp" value="100">
+              <input type="button" class="inp fw-bold" value="Filter">
+              <h5>Color</h5>
+              <span>
+                <img src="./figma/Color1.png" alt="">
+                <img src="./figma/Color2.png" alt="">
+                <img src="./figma/Color3.png" alt="">
+                <img src="./figma/Color4.png" alt="">
+                <img src="./figma/Color5.png" alt="">
+                <img src="./figma/Color21.png" alt="" style="position: relative; left: -135px;">
+              </span>
+              <h2>All Products</h2>
+              <ul class="ul2">
+                  <li>Small</li>
+                  <li>Large</li>
+                  <li>Medium</li>
+              </ul>
+              <h2>Brands</h2>
+              <ul>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+                  <li>Lorem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Screen -->
+        <section id="sec1">
+            <div class="grid">
+                <div class="grid1">
+                    <h2>All Products</h2>
+                    <ul>
+                        <li>living</li>
+                        <li>Dining</li>
+                        <li>Furniture</li>
+                        <li>Technics</li>
+                        <li>Accessories</li>
+                    </ul>
+                    <h4>Filter by</h4>
+                    <h5>Price</h5>
+                    <input type="range" class="rangee"><br>
+                    <input type="button" class="inp" value="20">
+                    <input type="button" class="inp" value="100">
+                    <input type="button" class="inp fw-bold" value="Filter">
+                    <h5>Color</h5>
+                    <span class="ms-4 p-2">
+                      <img src="./figma/Color1.png" alt="">
+                      <img src="./figma/Color2.png" alt="">
+                      <img src="./figma/Color3.png" alt="">
+                      <img src="./figma/Color4.png" alt="">
+                      <img src="./figma/Color5.png" alt="">
+                      <img src="./figma/Color21.png" alt="" style="position: relative; left: -95px;">
+                    </span>
+                    <h2>All Products</h2>
+                    <ul class="ul2">
+                        <li>Small</li>
+                        <li>Large</li>
+                        <li>Medium</li>
+                    </ul>
+                    <h2>Brands</h2>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul>
+                    <h2>Popular Tags</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div> 
+                <div class="grid2">
+                    <div class="subgrid1">
+                        <a href="cart.html" class="text-decoration-none">
+                            <div class="sub sub1">
+                                <span class="text-dark fw-bold ms-3" style="position: relative; top: 10px;">New</span>
+                                <span class="float-end me-3 mt-3"><img src="./figma/like.png" alt="" style="width: 20px; height:20px;"></span>
+                                <span class="text-dark ms-3 fw-bold mt-3" style="display: block; font-size: 1em;position: relative; top: 200px;">Chair and Table</span>
+                                <span class="ms-3 fw-bold mt-3" style="color: grey; font-size: 1.5em;position: relative; top: 200px;">$69</span>
+                            </div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="sub sub2">
+                                <span class="float-end me-3 mt-3"><img src="./figma/like.png" alt="" style="width: 20px; height:20px;"></span>
+                            </div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="sub sub3"></div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="sub sub4"></div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="sub sub5"></div>
+                        </a>
+                        <a href="cart.html">
+                            <div class="sub sub6"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="stocks float-end me-5" style="position: relative; right:160px;">
+                <span class="fw-bold"><a href="#" class="text-decoration-none text-dark">01</a></span>
+                <span><a href="#" class="text-decoration-none text-dark">02</a></span>
+                <span><a href="#" class="text-decoration-none text-dark">03</a></span>
+                <span><a href="#" class="text-decoration-none text-dark">04</a></span>
+                <span><a href="#" class="text-decoration-none text-dark">05</a></span>
+                <span><a href="#" class="text-decoration-none text-dark"><img src="./figma/right-arrow.png" alt="" style="width: 15px;"></a></span>
+            </div>
+            <div class="popular d-lg-none">
+              <h2>Popular Tags</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint praesentium aperiam, accusamus beatae magni ea?</p>
+            </div>
+        </section>
+        <footer>
+            <div class="row foot">
+                <div class="col-sm-12 col-md-4 div1">
+                    <h2 class="mt-4 float-md-end">Get Discount 25% off</h2>
+                </div>
+                <div class="col-sm-12 col-md-4 div2">
+                    <input class="mt-4 float-md-end" type="text" placeholder="Enter your email..." style="width: 300px; border: 2px dashed blue;">
+                </div>
+                <div class="col-sm-12 col-md-4 div3">
+                    <button class="mt-4 fw-bold" style="width: 150px; border-color:#69B6EE">Send</button>
+                </div>
+            </div>
+        </footer>
+        <div class="name fw-bold">
+          <span>©</span><span class="text-primary ms-1 me-2">2022</span><span>Minimal by Victor John Aderibigbe</span>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

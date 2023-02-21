@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cart.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-between">
+            <h4 class="ms-5 fw-bold">Minimal.</h4>
+            <img class="me-5" src="./figma/bag.png" alt="" width="30px">
+        </header>
+        <div class="row inner-container">
+            <div class="col-sm-12 col-md-6">
+                <img src="./figma/order-1.png" alt="" class="image ms-md-5"><br>
+                <img src="./figma/Rectangle 7.png" alt="" class="img mt-4 ms-md-5">
+                <img src="./figma/Rectangle 8.png" alt="" class="img mt-4">
+                <img src="./figma/Rectangle 9.png" alt="" class="img mt-4">
+                <img src="./figma/arrow-left.png" alt="" class="arrow"><span><img src="./figma/arrow-line.png" alt="" class="arrow1"></span>
+            </div>
+            <div class="col-sm-12 col-md-6 inner">
+                <div class="inn">
+                    <p class="mt-4">Lorem, ipsum dolor.</p>
+                <h1 class="fw-bold">Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod alias quidem obcaecati est, quae voluptatum veritatis hic consectetur! Minus, atque.</p>
+                <img src="./figma/Round.png" alt=""><span><img src="./figma/Round 2.png" alt=""></span>
+                <table class="mt-3"> 
+                    <tr>
+                        <td class="my-1 pt-2">
+                            <p class="mx-5">HEIGHT <br> <span class="fw-bolder fs-4">52</span> cm</p>
+                        </td>
+                        <td class="my-1 pt-2">
+                            <p class="mx-5">WIDTH <br> <span class="fw-bolder fs-4">43</span>cm</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="text-decoration-underline">Size in inches</p>
+                <h1 class="fw-bold">$69.00</h1>
+                <img src="./figma/minus.png" alt="" onclick="minus ()"><span class="mx-2 fw-bold" id="result">1</span><img src="./figma/plus.png" alt="" onclick="plus ()"><br>
+                <button class="btn btn-outline-dark mt-2" onclick="add ()"><h6 class="fw-bold">ADD TO CART</h6></button>
+                <button class="btn btn-dark mt-2"><h5>BUY NOW</h5></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var total = 1
+        function plus() {
+            if (total >=0) {
+                result.innerText = total + 1
+                total = total + 1
+            }
+        }
+        function minus () {
+            if (total >= 1) {
+                result.innerText = total - 1
+                total = total - 1
+            }
+        }
+        function add() {
+            alert(`${total} items added`)
+        }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

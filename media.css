@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carousel-control-prev, .carousel-control-next{
+    filter: invert(100%);
+}
+.carousel-inner{
+    height: 250px !important;
+}
+.carousel-inner img{
+    height: 250px !important;
+}
+#sofa{
+    position: absolute !important;
+    top: -60px !important;
+    font-size: 15px !important;
+}
+#link{
+    position: absolute !important;
+    top: -40px !important;
+    left: 2px !important;
+    font-size: 15px !important;
+}
+.sidebar .inp{
+    width: 58px;
+}
+.sidebar span img{
+    margin: 5px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh !important;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    list-style-type: none;
+}
+.grid1{
+    display: none;
+}
+.rangee{
+    width: 180px !important;
+    margin-bottom: 10px;
+}
+.subgrid1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh !important;
+    width: 70vw !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sub{
+    height: 300px;
+    width: 160px;
+    border-radius: 10px;
+}
+.sub1{
+    background-image: url(./figma/image-2.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub2{
+    background-image: url(./figma/image-3.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub3{
+    background-image: url(./figma/image-4.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub4{
+    background-image: url(./figma/image-5.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub5{
+    background-image: url(./figma/image-6.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub6{
+    background-image: url(./figma/image-7.PNG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stocks{
+    position: relative;
+    left: 10px;
+    top: 300px;
+}
+.popular{
+    text-align: center;
+    margin-top: 320px !important;
+    height: 10vh;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px !important;
+}
+footer{
+    height: 25vh !important; 
+    width: 100vw;
+    background-color: #f6f6f6;
+}
+.div1 h2{
+    text-align: center;
+}
+.div2 input{
+    margin-left: 20px;
+}
+.div3 button{
+    margin-left: 100px !important;
+}
+#info{
+    position: fixed;
+    bottom: 50%;
+}
+#info img{
+    margin-bottom: 5px;
+}
+#info img:hover{
+    width: 50px;
+}
+.name{
+    height: 50px !important;
+    width: 150px !important;
+    margin-bottom: 10px !important;
+    font-size: 13px !important;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
